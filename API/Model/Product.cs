@@ -22,6 +22,7 @@ namespace DataAccess.Model
         public int Quantity { get; set; }
         public string Image {  get; set; }
         public virtual Category Category { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
 
     }
 }
